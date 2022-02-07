@@ -3,7 +3,7 @@ import java.util.List;
 import java.util.ArrayList;
 import java.sql.Timestamp;
 
-public class Endangered {
+public class Endangered extends Animal {
 
     public String health;
     public String age;
@@ -53,7 +53,7 @@ public class Endangered {
     //Overriding save in animal class for  endangered  class
     @Override
     public void save() {
-        try(Connection con = DB.sql2o.open()) {
+        try(Connection con = DataBase.sql2o.open()) {
             String sql = "INSERT INTO animals (name, health, age, type) VALUES (:name, :health, :age, :type)";
             this.id = (int) con.createQuery(sql, true)
                     .addParameter("name", name)
@@ -67,7 +67,7 @@ public class Endangered {
 
     // finding endangered animal with a static type that will apply to animal class too
     public static Endangered find(int id) {
-        try(Connection con = DB.sql2o.open()) {
+        try(Connection con = DataBase.sql2o.open()) {
             String sql = "SELECT * FROM animals WHERE id = :id";
             return con.createQuery(sql)
                     .addParameter("id", id)
@@ -79,7 +79,7 @@ public class Endangered {
     //Overriding update method from Animal class for endangered animal
     @Override
     public void update() {
-        try(Connection con = DB.sql2o.open()) {
+        try(Connection con = DataBase.sql2o.open()) {
             String sql = "UPDATE animals SET name = :name, health = :health, age = :age WHERE id = :id";
             con.createQuery(sql)
                     .addParameter("name", name)
