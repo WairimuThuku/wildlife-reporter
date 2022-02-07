@@ -1,7 +1,7 @@
 <!--Navbar-->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
     <div class="container">
-        <a class="navbar-brand" href="/"><strong>Wildlife Tracker</strong></a>
+        <a class="navbar-brand" href="/"><strong>Wildlife Reporter</strong></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -22,7 +22,7 @@
 </nav>
 <!-- Navbar -->
 <!-- Full Page Intro -->
-<div class="view" style="background-image: url('/images/jaguar2.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+<div class="view" style="background-image: url('https://images.unsplash.com/photo-1588167056547-c183313da47c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=831&q=80'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
     <!-- Mask & flexbox options-->
     <div class="mask rgba-black-light align-items-center">
         <!-- Content -->
