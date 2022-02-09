@@ -1,10 +1,11 @@
+import org.sql2o.Connection;
+
 import java.sql.Timestamp;
-import org.sql2o.*;
 import java.util.List;
 
 public class Sighting implements DatabaseManagement {
     private int id;
-    private int animal_id;
+    private final int animal_id;
     private String location;
     private String ranger_name;
     private Timestamp timestamp;
@@ -135,4 +136,7 @@ public class Sighting implements DatabaseManagement {
         }
     }
 
+    public void setTimestamp(Timestamp timestamp) {
+        this.timestamp = timestamp;
+    }
 }
