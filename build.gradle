@@ -1,13 +1,13 @@
-plugins {
-    id 'java'
-}
+apply plugin: 'java'
+apply plugin: 'application'
 
-group 'org.example'
+group 'com.wildlife-reporter'
 version '1.0-SNAPSHOT'
 
-//archivesBaseName = "wildlife-reporter"
-//applicationName = "Wildlife-reporter"
-//def s = mainClassName = "App"s
+
+archivesBaseName = "wildlife-reporter"
+applicationName = "wildlife-reporter"
+mainClassName = "App"
 sourceCompatibility = 1.8
 
 repositories {

@@ -3,7 +3,7 @@ $(document).ready(function(){
 new WOW().init();
 
 var typed=new Typed(`#type`,{
-     strings:[" Wildlife Tracker "," An application that allows Rangers to track wildlife sightings in the area. "],
+     strings:[" Wildlife Tracker "," An application that allows Rangers to track wildlife sightings in the area. ", " App developed by Ranger Lulu Thuku. "],
      backSpeed:70,
      typeSpeed:80,
      smartBackspace:true,
